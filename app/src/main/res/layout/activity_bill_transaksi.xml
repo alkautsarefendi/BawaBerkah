@@ -1,0 +1,981 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.BillTransaksiActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:padding="10dp"
+        android:elevation="3dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_text"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:gravity="center"
+            android:text="BawaBerkah"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutZakat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total Pembayaran Zakat"
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Zakat Penghasilan per Bulan"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/txtZakatPenghasilan"
+                        android:layout_width="match_parent"
+                        android:enabled="false"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Zakat Maal yang dibayarkan per Bulan"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/txtZakatMaal"
+                        android:enabled="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Total Pembayaran Zakat Saya per Bulan"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/txtTotalPebayaranZakat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:enabled="false"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Nama"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/txtNamaZakat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="E-mail"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/txtEmailZakat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTransaksi"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/judulTransaksi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Pembayaran Wakaf"
+                    android:layout_marginTop="3dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Order ID"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/txtOrderIDWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Campaign"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/txtCampaignWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Jumlah"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp. "
+                        android:textSize="18sp"/>
+
+                    <TextView
+                        android:id="@+id/txtJumlahWakaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="18sp"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Nama"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/txtNamaDonaturWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="E-mail"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/txtEmailDonaturWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inputTelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Input No.Hp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <EditText
+                    android:id="@+id/txtNoHp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custom_shape_ungu"
+                    android:inputType="number"
+                    android:maxLength="13"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layoutDana"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@drawable/custom_shape_ungu"
+                    android:layout_margin="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cara Pembayaran"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/logo_full_dana"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Mohon selesaikan pembayaran Dana via aplikasi"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/custom_solid_grey"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Klik Bayar dengan DANA."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="2. Transaksi diarahkan ke aplikasi DANA."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="3. Klik Bayar."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="4. Cek pembayaran setelah transaksi selesai."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"
+                            android:layout_marginBottom="16dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutOvo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@drawable/custom_shape_ungu"
+                    android:layout_margin="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cara Pembayaran"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_ovo"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Mohon selesaikan pembayaran OVO via aplikasi"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/custom_solid_grey"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Klik Bayar dengan OVO."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="2. Transaksi diarahkan ke aplikasi OVO."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="3. Klik Bayar."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="4. Cek pembayaran setelah transaksi selesai."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"
+                            android:layout_marginBottom="16dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutBCA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@drawable/custom_shape_ungu"
+                    android:layout_margin="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cara Pembayaran"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_bca"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Mohon selesaikan pembayaran BCA via transfer"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/custom_solid_grey"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Klik Bayar dengan BCA."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="2. Instruksi pembayaran akan otomatis dikirimkan ke alamat e-mail Anda. Bisa dicek jika Anda lupa."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_text"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtBCA"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="3. Transfer zakatnya ke Yayasan Dompet Dhuafa Republika nomor Rekening 237.304.5560"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/copyRekBCA"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_copy"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="bottom|end"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="4. Cek menu activity di home setelah transaksi selesai, e-mail konfirmasi akhir juga akan dikirimkan."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="5. Proses mudah untuk berbagi kebaikan."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"
+                            android:layout_marginBottom="16dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutBNI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@drawable/custom_shape_ungu"
+                    android:layout_margin="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cara Pembayaran"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_bni"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Mohon selesaikan pembayaran BNI via transfer"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/custom_solid_grey"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Klik Bayar dengan BNI."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="2. Instruksi pembayaran akan otomatis dikirimkan ke alamat e-mail Anda. Bisa dicek jika Anda lupa."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_text"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtBNI"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="3. Transfer zakatnya ke Yayasan Dompet Dhuafa Republika nomor Rekening 237.304.5560"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/copyRekBNI"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_copy"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="bottom|end"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="4. Cek menu activity di home setelah transaksi selesai, e-mail konfirmasi akhir juga akan dikirimkan."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="5. Proses mudah untuk berbagi kebaikan."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"
+                            android:layout_marginBottom="16dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutMandiri"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@drawable/custom_shape_ungu"
+                    android:layout_margin="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cara Pembayaran"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_mandiri"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Mohon selesaikan pembayaran Mandiri via transfer"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/custom_solid_grey"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Klik Bayar dengan Mandiri."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="2. Instruksi pembayaran akan otomatis dikirimkan ke alamat e-mail Anda. Bisa dicek jika Anda lupa."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_text"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtMandiri"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="3. Transfer zakatnya ke Yayasan Dompet Dhuafa Republika nomor Rekening 237.304.5560"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/copyRekMandiri"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_copy"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="bottom|end"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="4. Cek menu activity di home setelah transaksi selesai, e-mail konfirmasi akhir juga akan dikirimkan."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="5. Proses mudah untuk berbagi kebaikan."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"
+                            android:layout_marginBottom="16dp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layoutBRI"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:background="@drawable/custom_shape_ungu"
+                    android:layout_margin="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="175dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:text="Cara Pembayaran"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_bri"
+                            android:layout_marginLeft="10dp"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Mohon selesaikan pembayaran BRI via transfer"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:background="@drawable/custom_solid_grey"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="6dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="1. Klik Bayar dengan BRI."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="2. Instruksi pembayaran akan otomatis dikirimkan ke alamat e-mail Anda. Bisa dicek jika Anda lupa."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:background="@drawable/background_text"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/txtBRI"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:text="3. Transfer zakatnya ke Yayasan Dompet Dhuafa Republika nomor Rekening 237.304.5560"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/copyRekBRI"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/ic_copy"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:layout_gravity="bottom|end"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="4. Cek menu activity di home setelah transaksi selesai, e-mail konfirmasi akhir juga akan dikirimkan."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="7dp"
+                            android:text="5. Proses mudah untuk berbagi kebaikan."
+                            android:textSize="16sp"
+                            android:background="@drawable/background_text"
+                            android:layout_marginBottom="16dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnBayar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_button_ungu"
+                    android:text="BAYAR"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

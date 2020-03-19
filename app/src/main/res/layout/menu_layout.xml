@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="95dp"
+    android:layout_height="70dp"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_donasi"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:textAppearanceSmall"
+        android:text="Android Example"
+        android:textAllCaps="false"
+        android:maxLines="2"
+        android:textSize="11dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

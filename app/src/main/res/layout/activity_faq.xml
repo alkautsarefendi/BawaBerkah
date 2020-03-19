@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.FAQActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:onClick="goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+        <TextView
+            android:id="@+id/txtHeader"
+            android:gravity="center"
+            android:text="F A Q"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="40dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apa itu Bawa Berkah ?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apa legalitas BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Siapa yang bisa galang dana di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Program seperti apa yang bisa digalang di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apakah ada biaya untuk galang dana di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Kategori Campaign dipisahkan sebagai berikut:"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana cara Kurban di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apakah program-program (campaign) di BawaBerkah bisa dipercaya?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq8"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana cara berdonasi di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq9"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apa yang dimaksud metode Pembayaran Otomatis di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apa yang dimaksud metode Pembayaran Manual di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana cara konfirmasi donasi di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apa yang akan terjadi kalau saya belum transfer donasi dalam 1x24 jam?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq13"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana transparansi donasi di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Jika saya ada kendala donasi, kemana saya harus menghubungi?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Siapa yang bisa galang dana di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana untuk mendaftar sebagai Penggalang Dana (Campaigner)?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq17"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana cara supaya Campaign saya banyak didukung?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana kalau target dana Campaign tidak tercapai?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq19"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana cara mencairkan dana yang terkumpul di BawaBerkah?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bagaimana kalau target dana Campaign tidak tercapai?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq21"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apakah Campaigner memperoleh data donatur yang mendukung Campaign-nya?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq22"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_shape_ungu"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Apakah BawaBerkah meminta laporan penyaluran dana yang telah dicairkan?"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"/>
+
+                <org.bawaberkah.app.Util.ExpandableTextView
+                    android:id="@+id/faq23"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

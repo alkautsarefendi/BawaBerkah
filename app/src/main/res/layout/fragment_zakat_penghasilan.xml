@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Penghasilan profesional oleh mayoritas ulama dikategorikan sebagai jenis harta wajib zakat berdasarkan analogi (qiyas) atas kemiripan (syabbah) terhadap karakteristik harta zakat yang telah ada"
+                android:textColor="@color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtGaji"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:hint="Penghasilan/Gaji per Bulan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtPenghasilanLain"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:inputType="number"
+                    android:imeOptions="actionNext"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Penghasilan Lain-lain per Bulan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHutang"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:hint="Hutang/Cicilan Saya"/>
+
+            </LinearLayout>
+
+            <!-- <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:gravity="center"
+                 android:layout_marginTop="20dp">
+
+                 <Button
+                     android:id="@+id/btnHitungPenghasilan"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Hitung"
+                     android:background="@drawable/custom_button_ungu"
+                     android:textColor="@color/white"
+                     android:textSize="18sp"/>
+             </LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Jumlah Penghasilan Perbulan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtJumlahPenghasilan"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#eeee"
+                    android:enabled="false"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nisab Zakat Penghasilan"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHargaBeras"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Harga beras saat ini (per Kg)"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Penghasilan Lain-lain per Bulan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtPenghasilanLainEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#eeeeee"
+                    android:enabled="false"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Hutang/Cicilan saya"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHutangSaya"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#eeeeee"
+                    android:enabled="false"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Jumlah Penghasilan per Bulan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtJumlahPenghasilanPerbulan"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#eeeeee"
+                    android:enabled="false"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:id="@+id/btnLanjutkanZakat"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="LANJUTKAN"
+                    android:textSize="20sp"
+                    android:background="@drawable/custom_button_grey"
+                    android:enabled="false"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

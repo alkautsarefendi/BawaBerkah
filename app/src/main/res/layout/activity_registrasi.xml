@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    android:weightSum="10"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.5"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@drawable/logo_baber_header"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Daftar untuk Personal"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/panelLogin"
+        android:id="@+id/panelDaftar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center_horizontal"
+        android:layout_gravity="top">
+
+        <EditText
+
+            android:drawableLeft="@drawable/icon_username"
+            android:hint="Name"
+            android:textColorHint="#ffffff"
+            android:drawablePadding="20dp"
+            android:background="@drawable/border"
+            android:padding="10dp"
+            android:id="@+id/txtNamaPersonal"
+            android:inputType="textCapWords"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLength="50"
+            android:textColor="#ffffff"/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:hint="Password"
+            android:textColorHint="#ffffff"
+            android:layout_below="@+id/txtNamaPersonal"
+            android:id="@+id/txtPasswordPersonal"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/icon_password"
+            android:drawablePadding="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLength="50"
+            android:inputType="textPassword"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:hint="E-mail"
+            android:textColorHint="#ffffff"
+            android:layout_below="@+id/txtPasswordPersonal"
+            android:id="@+id/txtEmailPersonal"
+            android:background="@drawable/border"
+            android:drawableLeft="@drawable/icon_email"
+            android:drawablePadding="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="textEmailAddress"
+            android:maxLength="50"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:hint="Telephone"
+            android:textColorHint="#ffffff"
+            android:layout_below="@+id/txtEmailPersonal"
+            android:id="@+id/txtTelephonePersonal"
+            android:background="@drawable/border"
+            android:inputType="number"
+            android:drawableLeft="@drawable/icon_telephone"
+            android:drawablePadding="20dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:imeOptions="actionDone"
+            android:maxLength="13"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/panelDaftar"
+        android:id="@+id/panelTombol"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="top">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnRegistrasiPersonal"
+            android:textColor="#9125c5"
+            android:textSize="20sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/btn_login"
+            android:text="Registrasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+</LinearLayout>

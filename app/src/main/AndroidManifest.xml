@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="org.bawaberkah.app">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icons_bawaberkah_baru_08"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icons_bawaberkah_baru_08"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Activity.FAQActivity"></activity>
+        <activity android:name=".Activity.WebDanaActivity" />
+        <activity android:name=".Activity.TentangActivity" />
+        <activity android:name=".Activity.KebijakanPrivacyActivity" />
+        <activity android:name=".Activity.SyaratKetentuanActivity" />
+        <activity android:name=".Activity.HubungiKamiActivity" />
+        <activity android:name=".Activity.DonasiMobilJenazahActivity" />
+        <activity android:name=".Activity.LayananPemulazaranJenazahLengkapActivity" />
+        <activity android:name=".Activity.LayananPemulazaranJenazahActivity" />
+        <activity android:name=".Activity.LayananMobilJenazahActivity" />
+        <activity android:name=".Activity.DetailCeritaActivity" />
+        <activity android:name=".Activity.DetailCampaignWakafActivity" />
+        <activity android:name=".Activity.FiturBarzahActivity" />
+        <activity android:name=".Activity.FiturCeritaKebaikanActivity" />
+        <activity android:name=".Activity.FiturQurbanActivity" />
+        <activity android:name=".Activity.FiturWakafActivity" />
+        <activity android:name=".Activity.HitungZakatActivity" />
+        <activity android:name=".Activity.FiturZakatActivity" />
+        <activity android:name=".Activity.BillTransaksiActivity" />
+        <activity android:name=".Activity.DetailCampaignActivity" />
+        <activity android:name=".Activity.SearchActivity" />
+        <activity android:name=".Activity.HalamanUtamaActivity" />
+        <activity android:name=".Activity.RegistrasiPerusahaanActivity" />
+        <activity android:name=".Activity.RegistrasiActivity" />
+        <activity android:name=".Activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

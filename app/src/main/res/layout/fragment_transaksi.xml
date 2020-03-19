@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp">
+
+    <!-- NOTE: This list should be displayed in a list
+    instead of nested layouts -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/txtTipeTransaksi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nominal Donasi"/>
+
+        <EditText
+            android:id="@+id/txtNominalDonasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_rp"
+            android:textSize="26sp"
+            android:hint="Jumlah"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:imeOptions="actionDone"
+            android:background="@drawable/custom_shape_grey_text"
+            android:paddingLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Metode Pembayaran"/>
+
+        <Spinner
+            android:id="@+id/spinMetodePembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_shape_grey_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Pesan Baikmu"/>
+
+        <EditText
+            android:id="@+id/txtPesanDonatur"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:textStyle="italic"
+            android:background="@drawable/custom_shape_grey_text"
+            android:layout_marginTop="5dp"
+            android:maxLength="100"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:id="@+id/rbtnAnonim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Munculkan Sebagai Anonim"
+            android:layout_marginTop="6dp"/>
+
+        <Button
+            android:id="@+id/btnLanjutkanPembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lanjutkan Pembayaran"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_button_ungu"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

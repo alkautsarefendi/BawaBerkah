@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Activity.DetailCampaignActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:onClick="goBack"
+                android:src="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+            <TextView
+                android:id="@+id/txtHeader"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="DETAIL CAMPAIGN"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/imgCampaign"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_below="@+id/header">
+
+            <ImageView
+                android:id="@+id/imageCampaign"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/judulLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgCampaign"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtJudulCampaign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:paddingTop="5dp"
+                    android:text="Judul Campaign"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/yayasanLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/judulLayout"
+                android:background="@android:color/white"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/imgYayasan"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle_profile"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/imgYayasan"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNamaYayasan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:text="Nama Yayasan"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtLokasiYayasan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Lokasi Yayasan"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/detailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yayasanLayout"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDanaTerkumpul"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rp 999.999.999.999"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:text="dari"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtDanaTarget"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="Rp.999.999.999"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressDanaCampaign"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailLayout"
+                android:layout_marginTop="3dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:minHeight="8dp"
+                android:progress="0"
+                android:theme="@style/AppTheme.WhiteAccent" />
+
+            <LinearLayout
+                android:id="@+id/jumlahLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progressDanaCampaign"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Donatur"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/txtJumlahDonatur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Progress"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/txtJumlahProgress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sisa Hari"
+                        android:textColor="@color/black"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/txtSisaCampaign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/jumlahLayout"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnExpandSinopsis"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Sinopsis"
+                    android:textColor="@color/colorPrimary" />
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandSinopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="4dp"
+                    android:paddingLeft="10dp"
+                    app:ael_duration="400"
+                    app:ael_expanded="false"
+                    app:ael_orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblSinopsis"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical"
+                        android:text="Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <Button
+                    android:id="@+id/btnExpandUpdate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Update"
+                    android:textColor="@color/colorPrimary" />
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    app:ael_duration="400"
+                    app:ael_expanded="false"
+                    app:ael_orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblUpdate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:text="Android library for creating an expandable and collapsible to full screen view inside a viewgroup composition. Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <Button
+                    android:id="@+id/btnExpandDonatur"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:gravity="left|center"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="Donatur"
+                    android:textColor="@color/colorPrimary" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandDonatur"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/btnExpandUpdate"
+                            android:padding="4dp"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_orientation="vertical">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/lvlDonatur"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content" />
+
+
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scroll"
+                android:background="@drawable/tombol_donasi"
+                android:text="Donasi"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

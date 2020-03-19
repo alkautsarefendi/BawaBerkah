@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    android:weightSum="10"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@drawable/logo_baber_header"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/idprov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/idkota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/idkec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/idkel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:gravity="top">
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Daftar untuk Perusahaan"
+            android:layout_centerInParent="true"
+            android:textStyle="bold"
+            android:textColor="#ffffff"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/panelLogin"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/panelDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center">
+
+            <EditText
+                android:hint="Nama Perusahaan"
+                android:textColorHint="#ffffff"
+                android:drawablePadding="15dp"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/ic_perusahaan"
+                android:padding="10dp"
+                android:id="@+id/txtNamaPerusahaan"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="#ffffff"/>
+
+            <Spinner
+                android:id="@+id/spinJenisPerusahaan"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txtNamaPerusahaan"
+                android:background="@drawable/border"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Tanggal Berdiri Perusahaan"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/spinJenisPerusahaan"
+                android:id="@+id/tglBerdiriPerusahaan"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/ic_calendar_white_24dp"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:focusable="false"
+                android:textColor="#ffffff"
+                android:clickable="true"/>
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Domisili Perusahaan"
+                android:drawableLeft="@drawable/ic_lokasi_perusahaan"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/tglBerdiriPerusahaan"
+                android:id="@+id/txtDomisiliPerusahaan"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Nomor Akta Pendirian"
+                android:drawableLeft="@drawable/ic_files_24dp"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/txtDomisiliPerusahaan"
+                android:id="@+id/txtNomerAktaAwal"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Nomor Akta Pendirian Terakhir"
+                android:drawableLeft="@drawable/ic_files_24dp"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/txtNomerAktaAwal"
+                android:id="@+id/txtNomerAktaAkhir"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="NPWP"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/txtNomerAktaAkhir"
+                android:drawableLeft="@drawable/ic_files_24dp"
+                android:id="@+id/txtNpwp"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Nama PIC"
+                android:textColorHint="#ffffff"
+                android:drawableLeft="@drawable/ic_person"
+                android:layout_below="@+id/txtNpwp"
+                android:id="@+id/txtNamaPIC"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Nomor SIUP"
+                android:textColorHint="#ffffff"
+                android:drawableLeft="@drawable/ic_files_24dp"
+                android:layout_below="@+id/txtNamaPIC"
+                android:id="@+id/txtSiup"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Telephone"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/txtSiup"
+                android:drawableLeft="@drawable/icon_telephone"
+                android:id="@+id/txtTelephone"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="20"
+                android:inputType="number"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="E-mail"
+                android:textColorHint="#ffffff"
+                android:drawableLeft="@drawable/icon_email"
+                android:layout_below="@+id/txtTelephone"
+                android:id="@+id/txtEmailPerusahaan"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Password"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/txtEmailPerusahaan"
+                android:id="@+id/txtPasswordPerusahaan"
+                android:background="@drawable/border"
+                android:drawableLeft="@drawable/icon_password"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:maxLength="50"
+                android:inputType="textPassword"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:hint="Alamat"
+                android:textColorHint="#ffffff"
+                android:layout_below="@+id/txtPasswordPerusahaan"
+                android:drawableLeft="@drawable/ic_lokasi_perusahaan"
+                android:id="@+id/txtAlamatPerusahaan"
+                android:background="@drawable/border"
+                android:drawablePadding="20dp"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:singleLine="false"
+                android:textSize="16sp"
+                android:maxLength="100"
+                android:textColor="#ffffff" />
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_below="@+id/txtAlamatPerusahaan"
+                android:layout_width="300dp"
+                android:layout_height= "wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/provinsi"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+
+                    android:layout_marginRight="10dp"/>
+
+                <Spinner
+                    android:id="@+id/kota"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_below="@+id/layout1"
+                android:layout_width="300dp"
+                android:layout_height= "wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Spinner
+                    android:id="@+id/kecamatan"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"/>
+
+                <Spinner
+                    android:id="@+id/keluarahan"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_below="@+id/layout2"
+                android:layout_width="300dp"
+                android:layout_height= "wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <EditText
+                    android:padding="10dp"
+                    android:hint="Kode Pos"
+                    android:textColorHint="#ffffff"
+                    android:id="@+id/kodepos"
+                    android:drawableLeft="@drawable/ic_lokasi_perusahaan"
+                    android:background="@drawable/border"
+                    android:drawablePadding="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:textSize="16sp"
+                    android:maxLength="5"
+                    android:inputType="number"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="10dp"/>
+
+                <EditText
+                    android:padding="10dp"
+                    android:drawablePadding="20dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="0sp"
+                    android:enabled="false"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/panelDaftar"
+        android:id="@+id/panelTombol"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:gravity="top">
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnConfirm"
+            android:textColor="#9125c5"
+            android:textSize="20sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/btn_login"
+            android:text="Registrasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"/>
+
+    </RelativeLayout>
+</LinearLayout>

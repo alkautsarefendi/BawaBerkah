@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.SyaratKetentuanActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary">
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:onClick="goBack"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"/>
+        <TextView
+            android:id="@+id/txtHeader"
+            android:gravity="center"
+            android:text="Syarat dan Ketentuan"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Syarat dan Ketentuan"
+                android:textColor="@color/black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="1."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="2."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="3."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="4."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="5."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="6."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="7."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="8."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:paddingRight="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:text="9."
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:text="@string/syarat9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

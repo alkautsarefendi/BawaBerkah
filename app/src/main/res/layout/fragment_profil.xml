@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/background_profile"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginTop="20dp"
+                android:id="@+id/profile_image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_person_black_24dp"
+                app:civ_border_color="#fff"
+                app:civ_border_width="4dp"
+                app:civ_fill_color="#ffffff" />
+            <TextView
+                android:id="@+id/txtNama"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:drawableRight="@drawable/logo_don"
+                android:padding="1dp"
+                android:drawablePadding="5dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:text="Profile Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtEmail"
+                android:textColor="#ffffff"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="user@profile.com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/background_pay"
+                android:gravity="center"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo_dana_bulet"/>
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:textColor="@color/black"
+                        android:text="Masuk"
+                        android:layout_gravity="center"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="0.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Masuk"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="7dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo_ovo_bulet"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <!--<android.support.v7.widget.CardView
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:elevation="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Total Donasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/lblTotalDonasi"
+                        android:text="Rp 0"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:paddingTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Total Zakat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/lblTotalZakat"
+                        android:text="Rp 0"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:paddingTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:text="Total Wakaf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"/>
+                    <TextView
+                        android:id="@+id/lblTotalWakaf"
+                        android:text="Rp 0"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:paddingTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:background="@drawable/background_text"
+                android:paddingBottom="5dp"
+                tools:ignore="Suspicious0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_notification"/>
+
+                <TextView
+                    android:id="@+id/txtNotifikasi"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:gravity="center|left"
+                    android:text="Notifikasi"
+                    android:textSize="16sp"/>
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:checked="true"
+                    android:textOff="OFF"
+                    android:textOn="ON" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:background="@drawable/background_text"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                tools:ignore="Suspicious0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_syarat"/>
+
+                <TextView
+                    android:id="@+id/txtSyarat"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#FFFFFF"
+                    android:gravity="left|center"
+                    android:drawablePadding="5dp"
+                    android:text="Syarat dan Ketentuan"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:background="@drawable/background_text"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                tools:ignore="Suspicious0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_privacy"/>
+
+                <TextView
+                    android:id="@+id/txtKebijakan"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#FFFFFF"
+                    android:gravity="left|center"
+                    android:drawablePadding="5dp"
+                    android:text="Kebijakan Privasi"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:background="@drawable/background_text"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="5dp"
+                android:orientation="horizontal"
+                tools:ignore="Suspicious0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_faq"/>
+
+                <TextView
+                    android:id="@+id/txtFAQ"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#FFFFFF"
+                    android:textColor="@color/black"
+                    android:gravity="left|center"
+                    android:drawablePadding="5dp"
+                    android:text="FAQ"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_text"
+                android:paddingBottom="5dp"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                tools:ignore="Suspicious0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_tentang"/>
+
+                <TextView
+                    android:id="@+id/txtTentang"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#FFFFFF"
+                    android:gravity="left|center"
+                    android:drawablePadding="5dp"
+                    android:text="Tentang Bawa Berkah"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_text"
+                android:paddingBottom="5dp"
+                tools:ignore="Suspicious0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_call"/>
+
+                <TextView
+                    android:id="@+id/txtHubungiKami"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#FFFFFF"
+                    android:gravity="left|center"
+                    android:drawablePadding="5dp"
+                    android:text="Hubungi Kami"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_text"
+                android:paddingBottom="5dp"
+                tools:ignore="Suspicious0dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_logout"/>
+
+                <TextView
+                    android:id="@+id/txtLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#FFFFFF"
+                    android:gravity="left|center"
+                    android:drawablePadding="5dp"
+                    android:text="Logout"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lblIdDonatur"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/lblHandphoneDonatur"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:id="@+id/lblIdGoogle"
+                android:layout_width="0dp"
+                android:layout_height="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

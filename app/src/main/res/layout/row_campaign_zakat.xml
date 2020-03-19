@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainGrid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+            <LinearLayout
+                android:id="@+id/layoutImage"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gambarCampaignWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/judulCampaignWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:singleLine="false"
+                    android:maxLines="2"
+                    android:text="Bantu Korban Banjir di Berbagai Daerah"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgCampaignerWakaf"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="3dp"/>
+
+                    <TextView
+                        android:id="@+id/txtCampaignerWakaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingLeft="10dp"
+                        android:text="Dompet Dhuafa"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/danaTerkumpulWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:drawablePadding="5sp"
+                    android:text="Rp 60.000.000,-"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressfundingWakaf"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:indeterminate="false"
+                    android:background="@color/bgBottomNavigation"
+                    android:max="100"
+                    android:minHeight="8dp"
+                    android:progress="0"
+                    android:theme="@style/AppTheme.WhiteAccent" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp">
+
+                    <TextView
+                        android:id="@+id/txtJumDonaturWakaf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="500"
+                        android:textStyle="bold"
+                        android:paddingLeft="7dp"
+                        android:paddingRight="7dp"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Donatur"
+                        android:paddingRight="7dp"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnZakat"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/custom_button_ungu"
+                        android:text="Salurkan ZAKAT"
+                        android:textColor="@android:color/white"
+                        android:textSize="12dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/start"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="0sp" />
+</GridLayout>

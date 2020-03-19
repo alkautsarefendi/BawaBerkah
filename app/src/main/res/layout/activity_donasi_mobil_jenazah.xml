@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.DonasiMobilJenazahActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:onClick="goBack"
+            android:src="@drawable/ic_back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Barzah"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e0e0e0"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Donasi Perawatan Mobil Jenazah"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:paddingRight="26dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/ic_like_ungu" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_share_ungu" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mobil_jenazah_barzah2" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/frameLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnExpandSinopsisDonasiBarzah"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="left|center"
+                        android:background="#FFFFFF"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Mengapa Berdonasi untuk Mobil Jenazah?"
+                        android:textColor="@color/colorPrimary" />
+
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expandSinopsisDonasiBarzah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        app:ael_duration="400"
+                        app:ael_expanded="false"
+                        app:ael_interpolator="bounce"
+                        app:ael_orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblSinopsisDonasiBarzah"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:scrollbars="vertical"
+                            android:text="@string/detail_mobile_jenazah" />
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnExpandUpdateDonasiBarzah"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="left|center"
+                        android:paddingLeft="10dp"
+                        android:background="#FFFFFF"
+                        android:paddingRight="10dp"
+                        android:text="Update"
+                        android:textColor="@color/black" />
+
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expandUpdateDonasiBarzah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="4dp"
+                        app:ael_duration="400"
+                        app:ael_expanded="false"
+                        app:ael_interpolator="bounce"
+                        app:ael_orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/lblUpdateDonasiBarzah"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical"
+                            android:text="Android library for creating an expandable and collapsible to full screen view inside a viewgroup composition. Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnExpandDonaturDonasiBarzah"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@android:drawable/arrow_down_float"
+                        android:gravity="left|center"
+                        android:paddingLeft="10dp"
+                        android:background="#FFFFFF"
+                        android:paddingRight="10dp"
+                        android:text="Donatur"
+                        android:textColor="@color/black" />
+
+                    <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                        android:id="@+id/expandDonaturDonasiBarzah"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/btnExpandUpdate"
+                        android:padding="4dp"
+                        app:ael_duration="400"
+                        app:ael_expanded="false"
+                        app:ael_interpolator="bounce"
+                        app:ael_orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/lvlDonaturDonasiBarzah"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbars="vertical" />
+
+                    </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnDonasiBarzah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/frameLayout"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"
+                    android:text="DONASI SEKARANG"
+                    android:textSize="18sp"
+                    android:background="@color/colorPrimary"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

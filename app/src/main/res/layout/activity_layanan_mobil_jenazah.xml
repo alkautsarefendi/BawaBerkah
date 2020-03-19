@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.LayananMobilJenazahActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:weightSum="1"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/txtHeader"
+            android:gravity="center"
+            android:text="Barzah"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#e0e0e0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Layanan Mobil Jenazah"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/custom_shape_grey">
+
+                    <EditText
+                        android:id="@+id/txtNamaLayananMobilJenazah"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:layout_marginLeft="5dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:hint="Nama Lengkap"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/custom_shape_grey">
+
+                    <EditText
+                        android:id="@+id/txtTelpLayananMobilJenazah"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:layout_marginLeft="5dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:hint="No. Telepon"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/custom_shape_grey">
+
+                    <EditText
+                        android:id="@+id/txtNamaJenazah"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/white"
+                        android:layout_marginLeft="5dp"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:hint="Nama Jenazah"/>
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/txtAlmtJemputJenazah"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:gravity="top"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/custom_shape_grey"
+                    android:layout_marginTop="16dp"
+                    android:maxLength="100"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Alamat Penjemputan Jenazah"
+                    android:textColor="@color/black"/>
+
+                <EditText
+                    android:id="@+id/txtAlmtAntarJenazah"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:gravity="top"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/custom_shape_grey"
+                    android:layout_marginTop="16dp"
+                    android:maxLength="100"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Alamat Pengantaran Jenazah"
+                    android:textColor="@color/black"/>
+
+                <Spinner
+                    android:id="@+id/spinAkibatMeninggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/custom_shape_grey_text"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/btnDaftarMobilJenazah"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_button_ungu"
+                        android:text="DAFTAR"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

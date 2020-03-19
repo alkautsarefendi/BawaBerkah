@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="30dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHartaTabungan"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:hint="Harta Tabungan /Giro /Deposito"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHargaLogam"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="Harga Logam Mulia (Emas/ Perak)"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHartaSurat"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:imeOptions="actionNext"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="Harta dalam bentuk Surat berharga"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHartaProperti"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="Harta dalam bentuk Properti"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHartaKendaraan"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:imeOptions="actionNext"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="Harta dalam bentuk Kendaraan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHartaSeni"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="Harta Koleksi Seni &amp; Barang Antik"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHargaStok"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="Harta Stok Barang Dagangan"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHartaLainnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:hint="Harta dalam bentuk Lainnya"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHartaPiutang"
+                    android:layout_width="match_parent"
+                    android:imeOptions="actionDone"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="Harta dalam bentuk Piutang Lancar"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Jumlah Harta"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtJumlahHartaMaal"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#eeeeee"
+                    android:enabled="false"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHutangJatuhTempo"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="5dp"
+                    android:inputType="number"
+                    android:hint="Hutang Jatuh Tempo Saat Bayar Zakat"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Jumlah Harta Yang Dihitung Zakatnya"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtJumlahHartaDihitung"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:enabled="false"
+                    android:background="#eeeeee"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nisab Zakat Harta (Maal)"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_shape_grey">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtHargaEmasSaatIni"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/black"
+                    android:background="@color/white"
+                    android:inputType="number"
+                    android:enabled="false"
+                    android:layout_marginLeft="5dp"
+                    android:hint="Harga Emas saat ini (dalam gram)"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Besarnya Nisab Zakat Maal per Tahun "/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtZakatMaalTahun"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#eeeeee"
+                    android:enabled="false"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Apakah Saya Wajib Membayar Zakat Maal?"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtWajibZakat"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#eeeeee"
+                    android:enabled="false"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Jumlah yang Saya Harus Dibayarkan per Tahun"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtJumlahZakatMaalTahun"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#eeeeee"
+                    android:enabled="false"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Jumlah Bila Saya Bayarkan per Bulan"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/custom_shape_white">
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:text="Rp"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"/>
+
+                <EditText
+                    android:id="@+id/txtJumlahZakatMaalBulan"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center"
+                    android:textColor="@color/black"
+                    android:background="#eeeeee"
+                    android:enabled="false"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="50dp">
+
+                <Button
+                    android:id="@+id/btnLanjutkanZakat"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="LANJUTKAN PEMBAYARAN"
+                    android:textSize="20sp"
+                    android:background="@drawable/custom_button_grey"
+                    android:enabled="false"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

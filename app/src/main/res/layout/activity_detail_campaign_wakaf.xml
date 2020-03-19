@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".Activity.DetailCampaignWakafActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <ImageView
+                android:id="@+id/imageCampaignWakaf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:onClick="goBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:tint="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/imgLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_like"
+                    android:padding="10dp"/>
+
+                <ImageView
+                    android:id="@+id/imgShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_share"
+                    android:tint="@color/white"
+                    android:padding="10dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtJudulCampaignWakaf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/yayasanLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <ImageView
+                    android:id="@+id/imgYayasanWakaf"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/circle_profile"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/imgYayasanWakaf"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNamaYayasanWakaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="false"
+                        android:textColor="@android:color/black"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtLokasiYayasanWakaf"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/detailLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yayasanLayout"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtDanaTerkumpulWakaf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressDanaCampaignWakaf"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailLayout"
+                android:layout_marginTop="3dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:minHeight="8dp"
+                android:progress="0"
+                android:theme="@style/AppTheme.WhiteAccent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtNomDonaturWakaf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:paddingLeft="4dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donatur"
+                    android:textSize="14sp"
+                    android:paddingLeft="3dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnExpandSinopsisWakaf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:gravity="left|center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/white"
+                    android:text="Deskripsi"
+                    android:textColor="@color/colorPrimary" />
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandSinopsisWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    app:ael_duration="400"
+                    app:ael_expanded="false"
+                    app:ael_orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblSinopsisWakaf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical"
+                        android:text="Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <Button
+                    android:id="@+id/btnExpandUpdateWakaf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:gravity="left|center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:background="@color/white"
+                    android:text="Update"
+                    android:textColor="@color/colorPrimary" />
+
+                <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                    android:id="@+id/expandUpdateWakaf"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    app:ael_duration="400"
+                    app:ael_expanded="false"
+                    app:ael_orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblUpdateWakaf"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="vertical"
+                        android:text="Android library for creating an expandable and collapsible to full screen view inside a viewgroup composition. Expandable Layout provides an easy way to create a view called header with an expandable view. Views are external layout to allow a maximum of customization." />
+                </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                <Button
+                    android:id="@+id/btnExpandDonaturWakaf"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:background="@color/white"
+                    android:drawableRight="@drawable/ic_arrow_down"
+                    android:gravity="left|center"
+                    android:paddingRight="10dp"
+                    android:text="Donatur"
+                    android:textColor="@color/colorPrimary" />
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.github.aakira.expandablelayout.ExpandableRelativeLayout
+                            android:id="@+id/expandDonaturWakaf"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/btnExpandUpdate"
+                            android:padding="4dp"
+                            app:ael_duration="400"
+                            app:ael_expanded="false"
+                            app:ael_orientation="vertical">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/lvlDonaturWakaf"/>
+
+                        </com.github.aakira.expandablelayout.ExpandableRelativeLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="16dp"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <Button
+                android:id="@+id/btnPayWakaf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tombol_donasi"
+                android:text="WAKAF"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
